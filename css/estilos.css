@@ -1,0 +1,270 @@
+/* Reseteo CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html { height: 101%; }
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, sans-serif; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style:none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+p { font-size: 1.2em; line-height: 1.0em; color: #333; }
+/* fin reseteo css */
+
+/*Selector etiqueta*/
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+div section#main{
+    grid-area: main;
+}
+div section#video{
+    grid-area: video;
+}
+div div#demo{
+    grid-area: carru;
+}
+
+div section#pag{
+    grid-area: pag;
+}
+footer section#derechos{
+    grid-area: derechos;
+}
+footer section#redes{
+    grid-area: redes;
+}
+footer section#lugar{
+    grid-area: lugar;
+}
+div section#sectionhalf{
+    grid-area: section_half;
+}
+div aside#imagen{
+    grid-area: imagen;
+}
+div section#form_cotiza{
+    grid-area: form_cotiza;
+}
+div aside#img_cotiza{
+    grid-area: img_cotiza;
+}
+div section#img_nos{
+    grid-area: img_nos;
+}
+div section#nos{
+    grid-area: nos;
+}
+div article#port1{
+    grid-area: port1;
+}
+div article#port2{
+    grid-area: port2;
+}
+div article#port3{
+    grid-area: port3;
+}
+div article#port4{
+    grid-area: port4;
+}
+div article#port5{
+    grid-area: port5;
+}
+div article#port6{
+    grid-area: port6;
+}
+header{
+    position: sticky;
+    top: 0pt;
+    display: flex;
+    flex-direction: row;
+}
+
+nav div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+li{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    font-size: 15pt;
+    text-align:center;
+}
+li:hover{
+    height: 30px;
+    background-color: #DAD858;
+}
+
+
+
+hr{
+    margin:0;
+    border:0;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+
+section h2{
+    color:#DAD858; 
+    font-family: serif;
+}
+
+form{
+    color: black;
+    font-family: sans-serif;
+    font-size: 10pt;
+    border: black 1pt solid;
+}
+input{
+    transition: 2s;
+}
+input:focus{
+    width: 200px;
+    font-size:16pt;
+
+}
+
+
+
+/*Selector Class*/
+	
+.imagen:hover{
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #DAD858;
+-webkit-box-shadow: 0px 0px 15px 15px #DAD858;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+.gris_oscuro{
+    background-color: dimgray;
+}
+.gris{
+    background-color: darkgrey;
+}
+.blanco{
+    background-color: white;
+}
+.imagen_tabla{
+    width: 200pt;
+    height: 200pt;
+}
+.titulo_tabla{
+    color:black;
+    font-family: serif;
+}
+
+.letra_titulo_mediano{
+    font-size: 18pt;
+}
+
+.letra_titulo_texto{
+    font-size: 12pt;
+}
+
+.centro{
+    text-align: center;
+}
+
+/*Selector ID*/
+#principal{
+    color:black;
+    font-family:'Roboto', sans-serif;
+    font-size: 22pt;
+}
+
+#grids_div{
+    display: grid;
+    height: 250pt;
+    grid-template-areas: 
+    "main main carru login"
+    "main main carru none"
+    "main main carru none";    
+    justify-content: center;
+    align-content: center;
+}
+#grids_footer{
+    display: grid;
+    grid-template-areas: 
+    "redes redes lugar"
+    "derechos derechos lugar"
+    ;
+}
+#derechos{
+    align-self: end;
+}
+
+#grids_contacto{
+    display: grid;
+    grid-template-areas: 
+    "section_half section_half imagen";
+}
+#grids_cotiza{
+    display: grid;
+    height: 250pt;
+    grid-template-areas: 
+    "form_cotiza form_cotiza img_cotiza";
+    align-content: center;
+}
+#img_cotiza{
+    align-self: center;
+    justify-self: center;
+}
+#grids_nos{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "img_nos img_nos"
+    "nos nos";
+}
+#img_nos{
+    justify-self: center;
+    align-self: center;
+}
+#grids_port{
+    display: grid;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    grid-template-areas: 
+    "port1 port2 port3"
+    "port4 port5 port6";
+    grid-row-gap: 15pt;
+}
+
+/*Media Queries*/
+
+@media (max-width:780px){
+    #grids_div{
+        display: grid;
+        height: 250pt;
+        grid-template-areas: 
+        "main"
+        "carru"
+        "login";    
+        justify-content: center;
+        align-content: center;
+    }
+}

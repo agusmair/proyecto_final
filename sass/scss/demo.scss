@@ -1,0 +1,46 @@
+/*variables*/
+$letra_titulo:serif;
+$color_titulo:black;
+
+/*mapa*/
+$color:(
+arriba: (to right, grey, black),
+abajo: (to left, grey, black, grey),
+medio: white
+); 
+
+
+/*Bucles*/
+
+@for $i from 1 through 2 {
+    .letra_titulo#{$i} { font-size: 30pt/$i; }
+}
+@each $tipo, $gradiente in $color {
+    .color_#{$tipo} {
+        background-image: linear-gradient($gradiente);
+    }
+} 
+
+
+
+/*bloques*/
+.titulo{
+    color:$color_titulo;
+    font-family:$letra_titulo;
+}
+
+.bordes_redondeados{
+    border-radius: 20px;
+}
+
+.derecha{
+    text-align: right;
+}
+.negrita{
+    font-weight: bold;
+}
+/*elementos*/
+.titulo__main{
+    @extend .titulo;
+    font-size: 20pt;
+}

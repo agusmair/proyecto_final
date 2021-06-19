@@ -1,0 +1,35 @@
+/*variables*/
+/*mapa*/
+/*Bucles*/
+.letra_titulo1 {
+  font-size: 30pt; }
+
+.letra_titulo2 {
+  font-size: 15pt; }
+
+.color_arriba {
+  background-image: linear-gradient(to right, grey, black); }
+
+.color_abajo {
+  background-image: linear-gradient(to left, grey, black, grey); }
+
+.color_medio {
+  background-image: linear-gradient(white); }
+
+/*bloques*/
+.titulo, .titulo__main {
+  color: black;
+  font-family: serif; }
+
+.bordes_redondeados {
+  border-radius: 20px; }
+
+.derecha {
+  text-align: right; }
+
+.negrita {
+  font-weight: bold; }
+
+/*elementos*/
+.titulo__main {
+  font-size: 20pt; }
